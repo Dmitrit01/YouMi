@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat-LightItalic";
+  src: url("../fonts/Montserrat-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat-Italic";
+  src: url("../fonts/Montserrat-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat-MediumItalic";
+  src: url("../fonts/Montserrat-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat-SemiBoldItalic";
+  src: url("../fonts/Montserrat-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat-BoldItalic";
+  src: url("../fonts/Montserrat-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Montserrat-ExtraBoldItalic";
+  src: url("../fonts/Montserrat-ExtraBoldItalic.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
+:root {
+  --font-montserrat-norms-light:"Montserrat-Light",sans-serif;
+  --font-montserrat-italic-light:"Montserrat-LightItalic",sans-serif;
+  --font-montserrat-norms-regular:"Montserrat-Regular",sans-serif;
+  --font-montserrat-italic-regular:"Montserrat-Italic",sans-serif;
+  --font-montserrat-norms-medium:"Montserrat-Medium",sans-serif;
+  --font-montserrat-italic-medium:"Montserrat-MediumItalic",sans-serif;
+  --font-montserrat-norms-semibold:"Montserrat-SemiBold",sans-serif;
+  --font-montserrat-italic-semibold:"Montserrat-SemiBoldItalic",sans-serif;
+  --font-montserrat-norms-bold:"Montserrat-Bold",sans-serif;
+  --font-montserrat-italic-bold:"Montserrat-BoldItalic",sans-serif;
+  --font-montserrat-norms-extrabold:"Montserrat-ExtraBold",sans-serif;
+  --font-montserrat-italic-extrabold:"Montserrat-ExtraBoldItalic",sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 15;
+  margin: 0 auto;
+}
