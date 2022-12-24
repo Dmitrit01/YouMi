@@ -1,3 +1,20 @@
+:root {
+  --font-montserrat-norms-light:"Montserrat-Light",sans-serif;
+  --font-montserrat-italic-light:"Montserrat-LightItalic",sans-serif;
+  --font-montserrat-norms-regular:"Montserrat-Regular",sans-serif;
+  --font-montserrat-italic-regular:"Montserrat-Italic",sans-serif;
+  --font-montserrat-norms-medium:"Montserrat-Medium",sans-serif;
+  --font-montserrat-italic-medium:"Montserrat-MediumItalic",sans-serif;
+  --font-montserrat-norms-semibold:"Montserrat-SemiBold",sans-serif;
+  --font-montserrat-italic-semibold:"Montserrat-SemiBoldItalic",sans-serif;
+  --font-montserrat-norms-bold:"Montserrat-Bold",sans-serif;
+  --font-montserrat-italic-bold:"Montserrat-BoldItalic",sans-serif;
+  --font-montserrat-norms-extrabold:"Montserrat-ExtraBold",sans-serif;
+  --font-montserrat-italic-extrabold:"Montserrat-ExtraBoldItalic",sans-serif;
+  --main-color:#7872B9;
+  --secondary-color:#4D4D52;
+}
+
 .header {
   padding-top: 30px;
   background: #F9FCFF;
@@ -59,7 +76,7 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.02em;
-  color: #4D4D52;
+  color: var(--secondary-color);
 }
 .menu__link:hover {
   text-decoration: underline;
@@ -82,7 +99,7 @@
   font-family: var(--font-montserrat-norms-semibold);
   font-size: 16px;
   line-height: 22px;
-  color: #7872B9;
+  color: var(--main-color);
   border: 2px solid #7872B9;
   border-radius: 10px;
   background: #fff;
