@@ -87,8 +87,12 @@
   text-decoration: none;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1210px;
-  padding: 0 15;
+  padding: 0 15px;
   margin: 0 auto;
 }
