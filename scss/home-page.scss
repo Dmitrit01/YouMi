@@ -579,7 +579,7 @@
 .row-step{
     display: flex;
     justify-content: space-between;
-    column-gap: 10px;
+    column-gap: 20px;
     row-gap: 10px;
     &__content{
         flex:0 1 500px;
@@ -630,6 +630,180 @@
         }
     }
 }
+
+.first-step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    min-height: 85px;
+    @media screen and (max-width:992px){
+        flex-direction: column;
+    }
+    
+    @media screen and (max-width:768px){
+        margin-top: 50px;
+    }
+    &__content{
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            z-index: 0;
+            top: -25px;
+            left: 0;
+            width: 151px;
+            height: 100px;
+            background: url(../img/home-page/step/calendar.png) no-repeat;
+            @media screen and (max-width:992px){
+                background: url(../img/home-page/step/calendar-mini.png) no-repeat;
+                width: 54px;
+                height: 52px;
+                top: -25px;
+                left: calc(50% - 27px);
+                transform: scale(2);
+            }
+            @media screen and (max-width:480px){
+                transform: scale(1);
+            }
+        }
+        @media screen and (max-width:992px){
+            padding-top: 65px;
+        }
+    }
+    &__text {
+        padding-left: 105px;
+        max-width: 417px;
+        position: relative;
+        z-index: 5;
+        @media screen and (max-width:992px){
+            max-width: 215px;
+            padding-left: 0;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__button {
+        padding: 0 84px;
+        @media screen and (max-width:480px){
+            padding: 0 50px;
+            font-size: 16px;
+        }
+    }
+}
+.text {
+}
+.button {
+}
+
+//ask=============================================================================
+.ask {
+    padding: 120px 0 114px;
+    @media screen and (max-width:768px){
+        padding: 48px 0 50px;
+    }
+    &__body {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        @media screen and (max-width:768px){
+            row-gap: 25px;
+        }
+    }
+    &__button{
+        @media screen and (min-width:768px){
+            display: none;
+        }
+        margin-top: 40px;
+        padding: 0 10px;
+        max-width: 290px;
+        width: 100%;
+    }
+}
+
+.item-ask {
+    background: #F9FCFF;
+    border-radius: 15px;
+    padding: 36px 100px 30px 100px;
+    
+    @media screen and (max-width:768px){
+        padding: 20px 20px 20px 20px;
+        column-gap: 30px;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 60px;
+        @media screen and (max-width:768px){
+            column-gap: 10px;
+        }
+        img{
+            cursor: pointer;
+            @media screen and (max-width:768px){
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    &__content {
+        max-width: 780px;
+        text-align: left;
+    }
+
+    &__title {
+        font-family: var(--font-montserrat-italic-semibold);
+        font-size: 20px;
+        line-height: 140%;
+        color:var(--secondary-color);
+        @media screen and (max-width:480px){
+            font-size: 16px;
+        }
+    }
+
+    &__text {
+        margin-top: 15px;
+        max-width: 780px;
+        text-align: left;
+        margin-right: 100px;
+        display: none;
+        @media screen and (max-width:768px){
+            margin-right: 0;
+            
+        }
+    }
+    &__text.open{
+        display: block;
+        
+    }
+    &__icon{
+        width: 40px;
+        height: 40px;
+        background: url(../img/home-page/ask/plus.png) center no-repeat;
+        cursor: pointer;
+        transition: all 0.3s;
+        @media screen and (max-width:768px){
+            width: 30px;
+            height: 30px;
+            background-size:cover;
+            flex: 0 0 30px;
+        }
+    }
+    &__icon.open{
+        background: url(../img/home-page/ask/minus.png) center no-repeat;
+    }
+   
+}
+
 
 
 
