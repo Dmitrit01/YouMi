@@ -534,6 +534,7 @@
 .flex-specialist__title {
   margin-bottom: 15px;
 }
+
 .slider-specialist {
   display: none;
 }
@@ -589,10 +590,106 @@
   text-align: center;
 }
 .slider-specialist__title {
-  font-family: var(--font-montserrat-italic-semibold);
+  font-family: var(--font-montserrat-norms-semibold);
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.01em;
   color: var(--secondary-color);
   margin-bottom: 8px;
+}
+.slider-specialist__text {
+  font-family: var(--font-montserrat-norms-regular);
+  font-size: 20px;
+  line-height: 140%;
+  color: #4D4D52;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.step {
+  padding: 100px 0 138px;
+  background: #F9FCFF;
+}
+@media screen and (max-width: 768px) {
+  .step {
+    padding: 40px 0 50px;
+  }
+}
+.step__body {
+  text-align: center;
+}
+.step__title {
+  margin-bottom: 80px;
+}
+.step__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+@media screen and (max-width: 768px) {
+  .step__wrapper {
+    gap: 50px;
+  }
+}
+
+.row-step {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+.row-step__content {
+  flex: 0 1 500px;
+  text-align: left;
+  padding: 48px 0 40px 110px;
+  position: relative;
+  min-height: 210px;
+}
+@media screen and (max-width: 480px) {
+  .row-step__content {
+    padding: 80px 10px 0 10px;
+    text-align: center;
+    min-height: 0;
+  }
+}
+.row-step__title {
+  position: relative;
+  z-index: 5;
+  font-family: var(--font-montserrat-norms-semibold);
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #4D4D52;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 480px) {
+  .row-step__title {
+    font-size: 16px;
+  }
+}
+.row-step__text {
+  max-width: 390px;
+  position: relative;
+  z-index: 5;
+}
+.row-step__number {
+  position: absolute;
+  top: 24px;
+  left: 0;
+}
+@media screen and (max-width: 480px) {
+  .row-step__number {
+    top: 0;
+    left: calc(50% - 25px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .row-step__card {
+    display: none;
+  }
+}
+.row-step__card img {
+  width: 100%;
+  height: auto;
 }

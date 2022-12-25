@@ -477,18 +477,11 @@
            }
         }
     }
-
-    &__content {
-
-    }
-
     &__title {
         margin-bottom: 15px;
     }
 
-    &__text {
-
-    }
+    
 }
 //Слайдер
 .slider-specialist {
@@ -540,7 +533,7 @@
     }
 
     &__title {
-        font-family: var(--font-montserrat-italic-semibold);
+        font-family: var(--font-montserrat-norms-semibold);
         font-size: 18px;
         line-height: 140%;
         letter-spacing: 0.01em;
@@ -549,8 +542,95 @@
     }
 
     &__text {
+        font-family: var(--font-montserrat-norms-regular);
+        font-size: 20px;
+        line-height: 140%;
+        color: #4D4D52;
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
+//step=========================================================================
+.step {
+    padding: 100px 0 138px;
+    background: #F9FCFF;
+    @media screen and (max-width:768px){
+        padding: 40px 0 50px;
+    }
+    &__body {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 80px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+        @media screen and (max-width:768px){
+            gap: 50px;
+        }
+    }
+    
+}
+
+.row-step{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    row-gap: 10px;
+    &__content{
+        flex:0 1 500px;
+        text-align: left;
+        padding: 48px 0  40px 110px;
+        position: relative;
+        min-height: 210px;
+        @media screen and (max-width:480px){
+            padding: 80px 10px 0 10px;
+            text-align: center;
+            min-height: 0;
+        }
+    }
+    &__title {
+        position: relative;
+        z-index: 5;
+        font-family: var(--font-montserrat-norms-semibold);
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #4D4D52;
+        margin-bottom: 5px;
+        @media screen and (max-width:480px){
+            font-size: 16px;
+        }
+    }
+    &__text{
+        max-width: 390px;
+        position: relative;
+        z-index: 5;
+    }
+    &__number{
+        position:absolute;
+        top: 24px;
+        left: 0;
+        @media screen and (max-width:480px){
+            top: 0;
+            left: calc(50% - 25px);
+        }
+    }
+    &__card{
+       @media screen and (max-width:768px){
+            display: none;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
 
 
 
