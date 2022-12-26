@@ -56,7 +56,7 @@ $(document).ready(function() {
         infinite: true,
         variableWidth: true,
         rows:2,
-        //autoplay:true,
+        autoplay:true,
         autoplaySpeed:500,
     });
     //Слайдер-specialist
