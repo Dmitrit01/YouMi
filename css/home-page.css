@@ -932,7 +932,7 @@
 }
 @media screen and (max-width: 480px) {
   .virtual__content {
-    padding-bottom: 387px;
+    padding-bottom: 337px;
   }
 }
 .virtual__title {
@@ -973,6 +973,17 @@
   height: 40px;
   background: url(../img/home-page/virtual/check.png) center/cover no-repeat;
 }
+@media screen and (max-width: 480px) {
+  .virtual__item::before {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .virtual__item {
+    padding-left: 40px;
+  }
+}
 .virtual__button {
   max-width: 390px;
   width: 100%;
@@ -984,5 +995,105 @@
 @media screen and (max-width: 480px) {
   .virtual__button {
     margin: 50px auto 0 auto;
+  }
+}
+
+.help {
+  padding: 150px 0 120px;
+}
+@media screen and (max-width: 768px) {
+  .help {
+    padding: 50px 0;
+  }
+}
+.help__body {
+  background: #F9FCFF;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 55px 0 72px;
+  position: relative;
+}
+.help__inner {
+  padding: 0 20px;
+}
+.help__woman {
+  position: absolute;
+  top: -29px;
+  right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .help__woman {
+    width: 90px;
+    height: 90px;
+    top: -24px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .help__woman {
+    width: 90px;
+    height: 90px;
+    top: -30px;
+    right: 0px;
+  }
+}
+
+.info-help {
+  padding-right: 300px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .info-help {
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .info-help {
+    padding-right: 0;
+  }
+}
+.info-help__title {
+  margin-bottom: 20px;
+  max-width: 780px;
+}
+@media screen and (max-width: 480px) {
+  .info-help__title {
+    margin-right: 70px;
+  }
+}
+.info-help__text {
+  max-width: 780px;
+}
+.info-help__text span {
+  font-family: var(--font-montserrat-norms-semibold);
+}
+
+.contact-help {
+  display: grid;
+  grid-template: 1fr/repeat(2, 1fr);
+  gap: 30px 50px;
+}
+@media screen and (max-width: 768px) {
+  .contact-help {
+    gap: 30px 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .contact-help {
+    grid-template: 1fr/repeat(1, 1fr);
+  }
+}
+.contact-help__title {
+  font-family: var(--font-montserrat-norms-semibold);
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 480px) {
+  .contact-help__title {
+    font-size: 18px;
+    margin-bottom: 8px;
   }
 }
