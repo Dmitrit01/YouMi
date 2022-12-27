@@ -111,14 +111,17 @@
         @media screen and (max-width:768px){
             width: 100%;
             max-width: 330px;
+           
         }
+        
     }
-
     &__item {
-        padding-right: 20px;
         @media screen and (min-width:769px){
             &:nth-child(even){flex: 0 0 42%;}
             &:nth-child(odd){flex: 0 0 58%;}
+        }
+        @media screen and (max-width:768px){
+            &:nth-child(odd){padding-right: 10px;}
         }
         flex:0 50%;
     }
@@ -132,6 +135,9 @@
         cursor: pointer;
         &:hover{
             text-decoration: underline;
+        }
+        @media screen and (max-width:480px){
+            font-size: 16px;
         }
     }
 

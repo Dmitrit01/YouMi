@@ -122,7 +122,6 @@
   }
 }
 .nav-footer__item {
-  padding-right: 20px;
   flex: 0 50%;
 }
 @media screen and (min-width: 769px) {
@@ -131,6 +130,11 @@
   }
   .nav-footer__item:nth-child(odd) {
     flex: 0 0 58%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-footer__item:nth-child(odd) {
+    padding-right: 10px;
   }
 }
 .nav-footer__link {
@@ -143,6 +147,11 @@
 }
 .nav-footer__link:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 480px) {
+  .nav-footer__link {
+    font-size: 16px;
+  }
 }
 
 .documentation-footer {
