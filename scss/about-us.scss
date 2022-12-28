@@ -15,13 +15,13 @@
     --main-color:#7872B9;
     --secondary-color:#4D4D52;
 }
-//meet========================================================================
-//meet=======================================================================
+
+//meet============================================================================================
 .meet {
     background: #F9FCFF;
     padding: 75px 0 81px 0;
     @media screen and (max-width:768px){
-        padding: 47px 0 72px 0;
+        padding: 47px 0 50px 0;
     }
     &__body {
         display: flex;
@@ -38,44 +38,20 @@
         flex-direction: column;
         align-items: flex-start;
         @media screen and (max-width:768px){
-            text-align: center;
-            align-items: center;
+            text-align:left;
+            align-items: left;
         }
     }
 
     &__image {
         flex:0 0 49%;
         position: relative;
-        &:after{
-            content: '';
-            position: absolute;
-            bottom: -100px;
-            right: 0;
-            width: 80px;
-            height: 80px;
-            background: url(../img/home-page/meet/chat.svg) center/cover no-repeat;
-            @media screen and (max-width:768px){
-                bottom: -60px;
-            }
-            @media screen and (max-width:360px){
-                bottom: -52px;
-                width: 40px;
-                height: 40px;
-            }
-        }
     }
     &__card-img {
         @media screen and (min-width:769px){
-            position: relative;
-            min-height: 444px;
-            overflow: hidden;
             img{
-                object-fit: cover;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
+                max-width: 100%;
+                height: auto;
             }
        }
        @media screen and (max-width:768px){
@@ -86,17 +62,36 @@
         }
     }
 }
-
 .content-meet {
 
     &__title {
         margin-top: 17px;
         margin-bottom: 10px;
         font-size: 44px;
+        span{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                background: url(../img/about-us/meet/ornamentation.png) no-repeat;
+                top: -15px;
+                left: -27px;
+                width: 222px;
+                height: 85px;
+                @media screen and (max-width:480px){
+                    background: url(../img/about-us/meet/mini-ornamentation.png) no-repeat;
+                    width: 112px;
+                    height: 45px;
+                    z-index: 1;
+                    top: -9px;
+                    left: -9px;
+                }
+            }
+        }
         @media screen and (max-width:768px){
            margin-bottom: 5px;
         }
-        @media screen and (max-width:360px){
+        @media screen and (max-width:480px){
             font-family: var(--font-montserrat-norms-bold);
             font-size: 24px;
             
@@ -143,3 +138,435 @@
         }
     }
 }
+//online=========================================================================================
+.online {
+    padding: 82px 0 100px;
+    @media screen and (max-width:768px){
+        padding: 40px 0 45px;
+    }
+    &__body {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 80px;
+        max-width: 1200px;
+        @media screen and (max-width:480px){
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+        @media screen and (max-width:900px){
+            display: none;
+        }
+    }
+
+    &__item {
+        flex: 0 1 33.333%;
+    }
+}
+//слайдер ниже 900px
+.online__slider{
+    display: none;
+    @media screen and (max-width:900px){
+       display: block;
+       position: relative;
+    }
+    //Ограничивающая оболочка
+    .slick-list{
+        overflow: hidden;
+       
+    }
+    //Дорожка слайдера
+    .slick-track{
+        display: flex;
+        column-gap:20px;
+    }
+    //Точки для слайдера
+    .slick-dots{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap:0 30px;
+        @media screen and (max-width:480px){
+            margin-top: 20px;
+        }
+        //Просто точка
+        li{
+            width: 30px;
+            height: 30px;
+            background: #CDE1FF;
+            border-radius: 50%;
+            cursor: pointer;
+            button{
+                display: none;
+            }
+            @media screen and (max-width:480px){
+                width: 10px;
+                height: 10px;
+            }
+        }
+        //Активная точка
+        .slick-active{
+            background: #7872B9;
+        }
+    }
+
+    //Элементы для слайдера
+   
+    .item-online__content{
+        min-height: calc(100% - 70px);
+       
+    }
+}
+.item-online {
+    position: relative;
+    &__content {
+        margin-top: 110px;
+        padding: 130px 30px 44px 30px;
+        background: #EBF5FF;
+        border-radius: 20px;
+        text-align: center;
+        @media screen and (max-width:992px){
+            margin-top: 70px;
+            padding: 90px 15px 44px 15px;
+        }
+        @media screen and (max-width:768px){
+            margin-top: 60px;
+            padding: 90px 20px 30px 20px;
+        }
+    }
+
+    &__title {
+        font-family: var(--font-montserrat-norms-semibold);
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #4D4D52;
+        margin-bottom: 15px;
+        @media screen and (max-width:480px){
+            font-size: 18px;
+            
+        }
+    }
+
+    &__text {
+        font-family: var(--font-montserrat-norms-regular);
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #4D4D52;
+        @media screen and (max-width:480px){
+            font-size: 14px;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        top: 0;
+        left:calc(50% - 110px);
+        @media screen and (max-width:992px){
+            width: 150px;
+            height: 150px;
+            left:calc(50% - 75px);
+        }
+        @media screen and (max-width:480px){
+            width: 120px;
+            height: 120px;
+            left:calc(50% - 60px);
+        }
+    }
+}
+//person======================================================================================
+.person {
+    padding: 100px 0;
+    background: #F9FCFF;
+    @media screen and (max-width:768px){
+        padding: 40px 0;
+    }
+    &__title {
+        font-family: var(--font-montserrat-norms-semibold);
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #4D4D52;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        max-width: 1080px;
+        margin-bottom: 27px;
+        span{
+            position: relative;
+            &:after{
+                position: absolute;
+                content: '';
+                bottom: -11px;
+                right: 5px;
+                width: 321px;
+                height: 12px;
+                background: url(../img/home-page/specialist/arrow-yellow.png) no-repeat;
+                @media screen and (max-width:640px){
+                    transform: scale(0.5);
+                    right: -90px;
+                }
+            }
+        }
+    }
+    //Контейнер для слайдера
+    &__container{
+        text-align: center;
+    }
+
+}
+
+.wrapper-person {
+    display: inline-flex;
+    margin: 94px auto 0 auto;
+    max-width: 1120px;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 80px;
+    @media screen and (max-width:992px){
+        column-gap: 20px;
+    }
+    @media screen and (max-width:768px){
+        display: none;
+    }
+    &__item {
+        flex:1 1 auto;
+        
+    }
+}
+.item-person {
+    text-align: center;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    &__title {
+        font-family: var(--font-montserrat-norms-semibold);
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #4D4D52;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-family: var(--font-montserrat-norms-regular);
+        font-size: 18px;
+        line-height: 140%;
+        color: #4D4D52;
+    }
+
+}
+//Слайдер person
+.slider-person{
+    max-width: 80%;
+    margin: 80px auto 0 auto;
+    position: relative;
+    display: none;
+    @media screen and (max-width:768px){
+        display: block;
+    }
+    @media screen and (max-width:480px){
+        margin: 41px auto 0 auto;
+    }
+    
+    //ограничивающая оболочка
+    .slick-list{
+        overflow: hidden;
+        
+    }
+    //дорожка
+    .slick-track{
+        display: flex;
+        column-gap: 30px;
+    }
+    //стрелки
+    .slick-arrow{
+        font-size: 0;
+        position: absolute;
+        top: calc(50% - 60px);
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+        border: none;
+        cursor: pointer;
+        @media screen and (max-width:640px){
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .slick-prev{
+        left: -60px;
+        background: url(../img/about-us/specialist/arrow-left.png) center/cover no-repeat;
+        @media screen and (max-width:640px){
+            top: calc(50% - 50px);
+            left: -30px;
+        }
+    }
+    .slick-next{
+        right: -60px;
+        background: url(../img/about-us/specialist/arrow-right.png) center/cover no-repeat;
+        @media screen and (max-width:640px){
+            top: calc(50% - 50px);
+            right: -30px;
+        }
+    }
+}
+//specialist=================================================================================
+.specialist {
+    padding: 100px 0;
+    @media screen and (max-width:768px){
+        padding: 40px 0;
+    }
+    &__title {
+        font-family: var(--font-montserrat-norms-semibold);
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #4D4D52;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        max-width: 1080px;
+        span{
+            position: relative;
+            &:after{
+                position: absolute;
+                content: '';
+                bottom: -11px;
+                right: 5px;
+                width: 321px;
+                height: 12px;
+                background: url(../img/home-page/specialist/arrow-yellow.png) no-repeat;
+                @media screen and (max-width:640px){
+                    transform: scale(0.5);
+                    right: -90px;
+                }
+            }
+        }
+        
+    }
+}
+.flex-specialist {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    gap:30px;
+    @media screen and (max-width:640px){
+        display: none;
+    }
+    @media screen and (max-width:1100px){
+        gap:20px;
+    }
+    &__item {
+        background: #EBF5FF;
+        border-radius: 20px;
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+        @media screen and (max-width:1100px){
+            gap: 20px;
+        }
+        &_long{
+            flex: 1 0 57%; padding: 30px 20px 10px 30px;
+        }
+        &_short{
+            flex: 1 0 40%;
+            padding: 40px 90px 40px 100px;
+            @media screen and (max-width:1100px){
+                padding: 30px 30px 40px 40px;
+            }
+            @media screen and (max-width:640px){
+                flex: 1 0 100%;
+            }
+        }
+        img{
+           @media screen and (max-width:1110px){
+                width: 100px;
+                height: 100px;
+           }
+        }
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    
+}
+//Слайдер-specialist
+.slider-specialist {
+    display: none;
+    @media screen and (max-width:640px){
+        display: block;
+        margin-top: 40px;
+    }
+    .slick-list{
+        overflow: hidden;
+    }
+    .slick-track{
+        display: flex;
+        gap: 10px;
+    }
+    //Точки слайдера
+    .slick-dots{
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        li{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #CDE1FF;
+            cursor: pointer;
+            button{display: none;}
+            @media screen and (max-width:360px){
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .slick-active{
+            background: #7872B9;
+        }
+    }
+    &__item {
+        background: #F9FCFF;
+        border-radius: 15px;
+        padding: 30px 20px;
+        @media screen and (max-width:360px){
+            padding: 30px 10px;
+        }
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        font-family: var(--font-montserrat-norms-semibold);
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: var(--secondary-color);
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-family: var(--font-montserrat-norms-regular);
+        font-size: 20px;
+        line-height: 140%;
+        color: #4D4D52;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+//history=================================================================================

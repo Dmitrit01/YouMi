@@ -43,8 +43,8 @@
 }
 @media screen and (max-width: 768px) {
   .meet__content {
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    align-items: left;
   }
 }
 .meet__image {

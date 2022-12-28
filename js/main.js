@@ -29,9 +29,7 @@ $(document).ready(function() {
         $('.item-ask__icon_6,.item-ask__text_6').toggleClass('open');
         
     });
-
-
-
+    //Слайдеры=================================================================================
 
     //Слайдер-online
     $('.online__slider').slick({
@@ -48,7 +46,7 @@ $(document).ready(function() {
             },
         ]
     });
-    //Слайдер-together
+    //Слайдер-together--самопрокрутка
     $('.slider-together').slick({
         dots:false,
         arrows:false,
@@ -65,8 +63,22 @@ $(document).ready(function() {
         arrows:false,
         slidesToShow: 1,
         rows:1,
-       
     });
+    $('.slider-person').slick({
+      dots:false,
+      arrows:true,
+      slidesToShow: 2,
+      rows:1,
+      responsive: [
+        {
+            breakpoint: 640,
+            settings: {
+               slidesToShow: 1,
+               
+            }
+        },
+    ]
+  });
 
 });
 //Динамический адаптив
