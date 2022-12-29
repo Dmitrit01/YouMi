@@ -140,7 +140,7 @@
   letter-spacing: 0.02em;
   color: #7872B9;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
   .title {
     font-size: 18px;
   }
@@ -157,4 +157,8 @@
   .text {
     font-size: 14px;
   }
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }

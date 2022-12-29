@@ -30,7 +30,6 @@ $(document).ready(function() {
         
     });
     //Слайдеры=================================================================================
-
     //Слайдер-online
     $('.online__slider').slick({
         dots:true,
@@ -64,6 +63,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         rows:1,
     });
+    //Слайдер-person
     $('.slider-person').slick({
       dots:false,
       arrows:true,
@@ -78,7 +78,18 @@ $(document).ready(function() {
             }
         },
     ]
-  });
+    });
+    //Cлайдер-write--самопрокрутка
+    $('.slider-right').slick({
+      dots:false,
+      arrows:false,
+      slidesToShow: 1,
+      infinite: true,
+      variableWidth: true,
+      rows:1,
+      autoplay:true,
+      autoplaySpeed:500,
+});
 
 });
 //Динамический адаптив

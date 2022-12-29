@@ -570,3 +570,197 @@
     }
 }
 //history=================================================================================
+.history {
+    padding: 85px 0 105px;
+    background: #F9FCFF;
+    @media screen and (max-width:768px){
+        padding: 50px 0 45px;
+    }
+    
+
+    &__title {
+        text-align: center;
+        margin-bottom: 90px;
+        @media screen and (max-width:480px){
+            margin-bottom: 40px;
+        }
+    }
+
+    &__box {
+        flex:0 1 980px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 137px;
+        @media screen and (max-width:700px){
+            row-gap: 50px;
+        }
+    }
+
+    &__box-inner {
+        display: flex;
+        justify-content: center;
+        max-width: 980px;
+        width: 100%;
+        margin: 0 auto;
+      
+    }
+
+    
+}
+
+.item-history {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex:1 1 100%;
+    @media screen and (max-width:700px){
+        flex-direction: column;
+    }
+    &__img {
+        img{
+           border-radius: 50%;
+           box-shadow:15px 15px 0px #EBF5FF;
+           @media screen and (max-width:360px){
+                box-shadow:10px 10px 0px #EBF5FF;
+                width: 120px;
+                height: 120px;
+           }
+        }
+        @media screen and (max-width:700px){
+            align-self: center;
+        }
+    }
+
+    &__content {
+        flex: 0 1 616px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        padding: 43px 0 0 0;
+        row-gap: 50px;
+        @media screen and (max-width:700px){
+            flex: 0 0 auto;
+        }
+    }
+
+    &__descr {
+        font-family: var(--font-montserrat-norms-regular);
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #4D4D52;
+        max-width: 470px;
+        padding: 0 70px;
+        box-sizing: content-box;
+        position: relative;
+        @media screen and (max-width:480px){
+            padding: 0 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+        &:before{
+            content:'';
+            position: absolute;
+            left: 0;
+            top: -15px;
+            width: 40px;
+            height: 40px;
+            background: url(../img/about-us/history/quote-left.png) no-repeat;
+            @media screen and (max-width:480px){
+                transform: scale(0.5);
+                left: -10px;
+            }
+        }
+        &:after{
+            content:'';
+            position: absolute;
+            bottom: -15px;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: url(../img/about-us/history/quote-right.png) no-repeat;
+            @media screen and (max-width:480px){
+                transform: scale(0.5);
+                right: -10px;
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        align-items: flex-end;
+    }
+
+    &__name {
+        font-family: var(--font-montserrat-norms-bold);
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #7872B9;
+        @media screen and (max-width:480px){
+            font-size: 18px;
+        }
+    }
+
+    &__profession {
+        font-family: var(--font-montserrat-norms-regular);
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #4D4D52;
+        @media screen and (max-width:480px){
+            font-size: 14px;
+        }
+    }
+}
+//write==================================================================================
+.write {
+    padding: 120px 0;
+    @media screen and (max-width:768px){
+        padding: 50px 0;
+    }
+    &__body {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 95px;
+        @media screen and (max-width:768px){
+            margin-bottom: 40px;
+        }
+    }
+
+    &__box {
+      
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:40px 130px;
+        display: none;
+        @media screen and (min-width:769px){
+            display: flex;
+        }
+    }   
+}
+//слайдер-right
+.slider-right {
+    display: none;
+    @media screen and (max-width:768px){
+        display: block;
+    }
+    .slick-list{
+        //overflow: hidden;
+    }
+    .slick-track{
+        display: flex;
+        gap: 0 130px;
+        @media screen and (max-width:480px){
+            gap:0 38px;
+        }
+      
+    }
+    
+}
+
+
