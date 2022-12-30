@@ -142,8 +142,8 @@
     &__title {
         margin-bottom: 80px;
         @media screen and (max-width:640px){
-            @media screen and (max-width:30px){
-             
+            @media screen and (max-width:480px){
+                margin-bottom: 30px;
             }
         }
     }
@@ -153,9 +153,55 @@
         flex-wrap: wrap;
         gap: 40px 20px;
         justify-content: center;
+        @media screen and (max-width:768px){
+            display: none;
+        }
     }
-
-    
+    &__form{
+        margin-top: 70px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+        align-items: center;
+        @media screen and (max-width:768px){
+            margin-top: 35px;
+            row-gap: 20px;
+        }
+    }
+    &__form-promo{
+        min-height: 60px;
+        max-width: 380px;
+        width: 100%;
+        border:2px solid #7872B9;
+        outline: none;
+        padding: 19px 30px;
+        border: 2px solid #7872B9;
+        border-radius: 15px;
+        font-family: var(--font-montserrat-norms-medium);
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+        color: #7872B9;
+        &::placeholder{
+            font-family: var(--font-montserrat-norms-medium);
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0.02em;
+            color: rgba(120, 114, 185, 0.6);
+            @media screen and (max-width:480px){
+                font-size: 14;
+            }
+        }
+        @media screen and (max-width:480px){
+            padding: 13px 15px;
+            font-size: 18px;
+        }
+    }
+    &__form-send{
+        max-width: 380px;
+        width: 100%;
+    }
 }
 
 .item-rates {
@@ -167,11 +213,24 @@
     border-radius: 15px;
     min-height: 384px;
     flex: 0 0 280px;
+    padding: 0 0px 30px 0px;
+    @media screen and (max-width:480px){
+        flex: 0 0 240px;
+        min-height: 362px;
+    }
+    @media screen and (max-width:350px){
+        flex: 0 0 200px;
+    }
     &__header{
         background: #EBF5FF;
         min-height: 57px;
         overflow: hidden;
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width:480px){
+            min-height: 52px;
+        }
     }
     &__title {
         font-family: var(--font-montserrat-norms-medium);
@@ -180,28 +239,146 @@
         letter-spacing: 0.02em;
         color: #4D4D52;
         margin: auto 0;
+        @media screen and (max-width:480px){
+            font-size: 16px;
+        }
     }
     &__content {
         display: flex;
         flex-direction: column;
+        align-items: center;
         flex-grow: 1;
+        padding-top: 20px;
     }   
-
+    &__price {
+        font-family: var(--font-montserrat-norms-bold);
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #7872B9;
+        max-width: 220px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width:480px){
+            font-size: 20px;
+        }
+        span{
+            line-height: 140%;
+            font-family: var(--font-montserrat-norms-medium);
+            font-size: 20px;
+            letter-spacing: 0.01em;
+            color: #7872B9;
+            @media screen and (max-width:480px){
+                font-size: 18px;
+            }
+        }
+    }
+    &__pay {
+        border: none;
+        outline: none;
+        background: #7872B9;
+        border-radius: 10px;
+        min-height: 70px;
+        max-width: 220px;
+        width: 100%;
+        padding: 0 10px;
+        font-family: var(--font-montserrat-norms-semibold);
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color:#fff;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 20px;
+        &:hover{
+            background: hsl(245, 62%, 75%);
+        }
+        @media screen and (max-width:480px){
+            font-size: 16px;
+            max-width: 180px;
+        }
+        @media screen and (max-width:350px){
+            max-width: 150px;
+        }
+    }
+    &__payment{
+        border: none;
+        outline: none;
+        min-height: 50px;
+        width: 100%;
+        max-width: 220px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F1E6F7;
+        border-radius: 8px;
+        font-family: var(--font-montserrat-norms-medium);
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        color: #4D4D52;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover{
+            background: #dbcee2;
+        }
+        @media screen and (max-width:480px){
+            font-size: 16px;
+            max-width: 180px;
+        }
+        @media screen and (max-width:350px){
+            font-size: 16px;
+            max-width: 150px;
+        }
+    }
     
 
-    &__price {
-
-    }
-
-    &__pay {
-
-    }
-
-    &__footer {
-
-    }
-
     &__benefit {
-
+        font-family: var(--font-montserrat-norms-medium);
+        font-size: 18px;
+        line-height: 140%;
+        color: #7872B9;
+    }
+}
+//rates-slider
+.rates-slider{
+    display: none;
+    
+    @media screen and (max-width:768px){
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .slick-list{
+        overflow: hidden;
+    }
+    .slick-track{
+        display: flex;
+        justify-content:space-around;
+    }
+    //стрелки
+    .slick-arrow{
+        position: absolute;
+        top: 0;
+        font-size: 0;
+        width: 20px;
+        height: 24px;
+        cursor: pointer;
+        top: calc(50%);
+        outline: none;
+        border: none;
+    }
+    .slick-prev{
+        left: -10px;
+        background: url(../img/rates/rates/left-arrow.png) center no-repeat;
+        z-index: 5;
+    }
+    .slick-next{
+        right: -10px;
+        background: url(../img/rates/rates/right-arrow.png) center no-repeat;
+        
     }
 }

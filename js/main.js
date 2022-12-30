@@ -89,8 +89,22 @@ $(document).ready(function() {
       rows:1,
       autoplay:true,
       autoplaySpeed:500,
-});
-
+    });
+    //Слайдер-rates--
+    $('.rates-slider').slick({
+      dots:false,
+      arrows:true,
+      slidesToShow: 2,
+      responsive: [
+          {
+              breakpoint: 700,
+              settings: {
+                 slidesToShow: 1,
+                 
+              }
+          },
+      ]
+  });
 });
 //Динамический адаптив
 class DynamicAdapt {
