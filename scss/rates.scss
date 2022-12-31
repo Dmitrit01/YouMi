@@ -604,14 +604,11 @@
     @media screen and (max-width:480px){
         flex: 0 0 auto;
     }
+    //Общии стили для стрелок
     &:nth-child(2)::before, &:nth-child(3)::before{
         content: '';
         position: absolute;
         z-index: 5;
-        top: 23px;
-        left: -136px;
-        width: 138px;
-        height: 45px;
         @media screen and (max-width:992px){
            left: -35%;
         }
@@ -625,21 +622,57 @@
             top: -54px;
         }
     }
+    //Первая стрелка
     &:nth-child(2)::before{
        background: url(../img/rates/programm/arrow.png) center/cover no-repeat;
+       width: 180px;
+       height: 80px;
+       top: 75px;
+       left: -200px;
+       @media screen and (max-width:1140px){
+            left: -150px;
+       }
+       @media screen and (max-width:992px){
+            left: -80px;
+            width: 140px;
+            height: 40px;
+       }
        @media screen and (max-width:768px){
             left: 20px;
             transform: rotate(75deg);
+            top: -35px;
+        }
+        @media screen and (max-width:480px){
+            width: 70px;
+            height: 40px;
+            top: -35px;
         }
     }
+    //Вторая стрелка
     &:nth-child(3)::before{
         background: url(../img/rates/programm/arrow-2.png) center/cover no-repeat;
+        width: 180px;
+        height: 80px;
+        top: 53px;
+        left: -200px;
+        @media screen and (max-width:1140px){
+            left: -150px;
+       }
+       @media screen and (max-width:992px){
+            left: -80px;
+            width: 140px;
+            height: 40px;
+       }
         @media screen and (max-width:768px){
             left: calc(100% - 138px);
             transform: rotate(103deg);
+            top: -35px;
         }
         @media screen and (max-width:480px){
             left: calc(100% - 100px);
+            width: 70px;
+            height: 40px;
+            top: -35px;
         }
     }
     &__text{

@@ -686,10 +686,6 @@
   content: "";
   position: absolute;
   z-index: 5;
-  top: 23px;
-  left: -136px;
-  width: 138px;
-  height: 45px;
 }
 @media screen and (max-width: 992px) {
   .item-box:nth-child(2)::before, .item-box:nth-child(3)::before {
@@ -710,25 +706,69 @@
 }
 .item-box:nth-child(2)::before {
   background: url(../img/rates/programm/arrow.png) center/cover no-repeat;
+  width: 180px;
+  height: 80px;
+  top: 75px;
+  left: -200px;
+}
+@media screen and (max-width: 1140px) {
+  .item-box:nth-child(2)::before {
+    left: -150px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .item-box:nth-child(2)::before {
+    left: -80px;
+    width: 140px;
+    height: 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   .item-box:nth-child(2)::before {
     left: 20px;
     transform: rotate(75deg);
+    top: -35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .item-box:nth-child(2)::before {
+    width: 70px;
+    height: 40px;
+    top: -35px;
   }
 }
 .item-box:nth-child(3)::before {
   background: url(../img/rates/programm/arrow-2.png) center/cover no-repeat;
+  width: 180px;
+  height: 80px;
+  top: 53px;
+  left: -200px;
+}
+@media screen and (max-width: 1140px) {
+  .item-box:nth-child(3)::before {
+    left: -150px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .item-box:nth-child(3)::before {
+    left: -80px;
+    width: 140px;
+    height: 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   .item-box:nth-child(3)::before {
     left: calc(100% - 138px);
     transform: rotate(103deg);
+    top: -35px;
   }
 }
 @media screen and (max-width: 480px) {
   .item-box:nth-child(3)::before {
     left: calc(100% - 100px);
+    width: 70px;
+    height: 40px;
+    top: -35px;
   }
 }
 .item-box__text {
