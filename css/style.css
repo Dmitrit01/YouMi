@@ -162,3 +162,7 @@
 .reverse {
   flex-direction: row-reverse;
 }
+
+.purple {
+  background: #F9FCFF;
+}
