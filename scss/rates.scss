@@ -562,3 +562,98 @@
 }
 .container {
 }
+//programm===================================================================================================
+.programm {
+    padding: 0 0 120px 0;
+    @media screen and (max-width:768px){
+        padding: 0 0 50px 0;
+    }
+    &__body {
+        text-align: center;
+       
+    }
+
+    &__title {
+        margin-bottom: 83px;
+        @media screen and (max-width:768px){
+            margin-bottom: 40px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        column-gap: 20px;
+        justify-content: space-between;
+        @media screen and (max-width:768px){
+            flex-direction: column;
+            row-gap: 60px;
+        }
+    }
+
+    &__item {
+    }
+}
+
+.item-box {
+    flex: 0 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    position: relative;
+    @media screen and (max-width:480px){
+        flex: 0 0 auto;
+    }
+    &:nth-child(2)::before, &:nth-child(3)::before{
+        content: '';
+        position: absolute;
+        z-index: 5;
+        top: 23px;
+        left: -136px;
+        width: 138px;
+        height: 45px;
+        @media screen and (max-width:992px){
+           left: -35%;
+        }
+        @media screen and (max-width:768px){
+            top: -50px;
+           
+        }
+        @media screen and (max-width:480px){
+            width: 70px;
+            height: 70px;
+            top: -54px;
+        }
+    }
+    &:nth-child(2)::before{
+       background: url(../img/rates/programm/arrow.png) center/cover no-repeat;
+       @media screen and (max-width:768px){
+            left: 20px;
+            transform: rotate(75deg);
+        }
+    }
+    &:nth-child(3)::before{
+        background: url(../img/rates/programm/arrow-2.png) center/cover no-repeat;
+        @media screen and (max-width:768px){
+            left: calc(100% - 138px);
+            transform: rotate(103deg);
+        }
+        @media screen and (max-width:480px){
+            left: calc(100% - 100px);
+        }
+    }
+    &__text{
+        max-width: 330px;
+        @media screen and (max-width:480px){
+            max-width: 250px;
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+        max-width: 120px;
+        @media screen and (max-width:480px){
+            max-width: 50px;
+        }
+    }
+}
