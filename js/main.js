@@ -90,7 +90,7 @@ $(document).ready(function() {
       autoplay:true,
       autoplaySpeed:500,
     });
-    //Слайдер-rates--
+    //Слайдер-rates
     $('.rates-slider').slick({
       dots:false,
       arrows:true,
@@ -104,7 +104,22 @@ $(document).ready(function() {
               }
           },
       ]
-  });
+    });
+    //Слайдер-wait
+    $('.slider-wait').slick({
+      dots:true,
+      arrows:false,
+      slidesToShow: 2,
+      responsive: [
+          {
+              breakpoint: 640,
+              settings: {
+                 slidesToShow: 1,
+                 
+              }
+          },
+      ]
+    });
 });
 //Динамический адаптив
 class DynamicAdapt {
