@@ -394,3 +394,363 @@
     font-size: 18px;
   }
 }
+
+.start {
+  padding: 120px 0;
+  background: #F9FCFF;
+}
+@media screen and (max-width: 768px) {
+  .start {
+    padding: 50px 0;
+  }
+}
+.start__body {
+  text-align: center;
+}
+.start__title {
+  margin-bottom: 96px;
+}
+@media screen and (max-width: 768px) {
+  .start__title {
+    margin-bottom: 50px;
+  }
+}
+.start__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 768px) {
+  .start__box {
+    margin-bottom: 40px;
+    row-gap: 50px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .start__item:nth-child(odd) {
+    padding: 23px 0 0 120px;
+    align-self: flex-start;
+    max-width: 580px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .start__item:nth-child(even) {
+    padding: 35px 0 0 120px;
+    align-self: flex-end;
+    max-width: 570px;
+    width: 100%;
+  }
+}
+.start__button {
+  max-width: 390px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.item-start {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  row-gap: 5px;
+  z-index: 5;
+  align-items: flex-start;
+  text-align: left;
+  min-height: 160px;
+}
+@media screen and (min-width: 769px) {
+  .item-start:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: -124px;
+    left: 157px;
+    width: 144px;
+    height: 144px;
+    background: url(../img/psychologists/start/arrow-1.png) no-repeat;
+  }
+  .item-start:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: -200px;
+    left: 274px;
+    width: 144px;
+    height: 144px;
+    background: url(../img/psychologists/start/arrow-2.png) no-repeat;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .item-start:nth-child(3)::before {
+    top: -150px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .item-start:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: -200px;
+    left: 120px;
+    width: 144px;
+    height: 144px;
+    background: url(../img/psychologists/start/arrow-3.png) no-repeat;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .item-start:nth-child(4)::before {
+    top: -120px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .item-start {
+    align-items: center;
+    row-gap: 5px;
+  }
+}
+.item-start__title {
+  z-index: 5;
+  font-family: var(--font-montserrat-norms-semibold);
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #4D4D52;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 768px) {
+  .item-start__title {
+    text-align: center;
+  }
+}
+.item-start__text {
+  z-index: 5;
+}
+@media screen and (max-width: 768px) {
+  .item-start__text {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .item-start img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .item-start img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .item-start img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.ask {
+  padding: 120px 0 185px;
+}
+@media screen and (max-width: 768px) {
+  .ask {
+    padding: 48px 0 50px;
+  }
+}
+.ask__body {
+  text-align: center;
+}
+.ask__title {
+  margin-bottom: 60px;
+}
+.ask__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .ask__wrapper {
+    row-gap: 25px;
+  }
+}
+.ask__button {
+  margin-top: 90px;
+  padding: 0 10px;
+  max-width: 290px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .ask__button {
+    margin-top: 40px;
+  }
+}
+.ask__button:nth-of-type(1) {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  .ask__button:nth-of-type(1) {
+    display: inline-flex;
+  }
+}
+.ask__button:nth-of-type(2) {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .ask__button:nth-of-type(2) {
+    display: inline-flex;
+  }
+}
+
+.item-ask {
+  background: #F9FCFF;
+  border-radius: 15px;
+  padding: 36px 100px 30px 100px;
+}
+@media screen and (max-width: 768px) {
+  .item-ask {
+    padding: 20px 20px 20px 20px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+.item-ask__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  .item-ask__top {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+.item-ask__top img {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .item-ask__top img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.item-ask__content {
+  max-width: 780px;
+  text-align: left;
+}
+.item-ask__title {
+  font-family: var(--font-montserrat-italic-semibold);
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--secondary-color);
+}
+@media screen and (max-width: 480px) {
+  .item-ask__title {
+    font-size: 16px;
+  }
+}
+.item-ask__text {
+  margin-top: 15px;
+  max-width: 780px;
+  text-align: left;
+  margin-right: 100px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .item-ask__text {
+    margin-right: 0;
+  }
+}
+.item-ask__text.open {
+  display: block;
+}
+.item-ask__icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: url(../img/home-page/ask/plus.png) center no-repeat;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .item-ask__icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    flex: 0 0 30px;
+    min-width: 30px;
+  }
+}
+.item-ask__icon.open {
+  background: url(../img/home-page/ask/minus.png) center no-repeat;
+}
+
+.team {
+  background: #F9FCFF;
+  padding: 0 0 80px;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    padding: 0 0 50px 0;
+  }
+}
+.team__body {
+  text-align: center;
+}
+.team__box {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .team__box {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+.team__content {
+  padding: 80px 0 0 0;
+  text-align: left;
+}
+@media screen and (min-width: 769px) {
+  .team__content {
+    flex: 0 1 782px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .team__content {
+    padding: 40px 0 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__content {
+    text-align: center;
+  }
+}
+.team__title {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 769px) {
+  .team__text {
+    max-width: 665px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .team__img {
+    transform: translate(0, -65px);
+  }
+}
+.team__img img {
+  max-width: 100%;
+  height: auto;
+}
+.team__button {
+  max-width: 390px;
+  width: 100%;
+}

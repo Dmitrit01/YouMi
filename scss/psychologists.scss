@@ -362,4 +362,335 @@
         }
     }
 }
+//start=================================================================
+.start {
+    padding: 120px 0;
+    background: #F9FCFF;
+    @media screen and (max-width:768px){
+        padding:50px 0;
+    }
+    &__body {
+        text-align: center;
+    }
 
+    &__title {
+        margin-bottom: 96px;
+        @media screen and (max-width:768px){
+            margin-bottom: 50px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 120px;
+        margin-bottom: 120px;
+        @media screen and (max-width:768px){
+            margin-bottom: 40px;
+            row-gap: 50px;
+        }
+    }
+    &__item:nth-child(odd) {
+        @media screen and (min-width:769px){
+            padding: 23px 0 0 120px;
+            align-self:flex-start;
+            max-width: 580px;
+            width: 100%;
+        }
+    }
+    &__item:nth-child(even) {
+        @media screen and (min-width:769px){
+            padding: 35px 0 0 120px;
+            align-self:flex-end;
+            max-width: 570px;
+            width: 100%;
+        }
+    }
+    &__button{
+        max-width: 390px;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.item-start {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    row-gap: 5px;
+    z-index: 5;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 160px;
+    @media screen and (min-width:769px){
+        &:nth-child(2)::before{
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: -124px;
+            left: 157px;
+            width: 144px;
+            height: 144px;
+            background: url(../img/psychologists/start/arrow-1.png) no-repeat;
+        }
+        &:nth-child(3)::before{
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: -200px;
+            left: 274px;
+            width: 144px;
+            height: 144px;
+            background: url(../img/psychologists/start/arrow-2.png) no-repeat;
+            @media screen and (max-width:1100px){
+                top: -150px;
+            }
+        }
+        &:nth-child(4)::before{
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: -200px;
+            left: 120px;
+            width: 144px;
+            height: 144px;
+            background: url(../img/psychologists/start/arrow-3.png) no-repeat;
+            @media screen and (max-width:1100px){
+                top: -120px;
+            }
+            
+        }
+    }
+    @media screen and (max-width:768px){
+        align-items: center;
+        row-gap: 5px;
+    }
+    &__title {
+        z-index: 5;
+        font-family: var(--font-montserrat-norms-semibold);
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #4D4D52;
+        margin-bottom: 8px;
+        @media screen and (max-width:768px){
+            text-align:center;
+
+        }
+    }
+
+    &__text {
+        z-index: 5;
+        @media screen and (max-width:768px){
+            text-align: center;
+        }
+    }
+    img{
+        @media screen and (min-width:769px){
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        @media screen and (max-width:768px){
+            width: 100px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width:480px){
+            width: 50px;
+            height: 50px;
+        }
+    }
+   
+}
+
+//ask=============================================================================
+.ask {
+    padding: 120px 0 185px;
+    @media screen and (max-width:768px){
+        padding: 48px 0 50px;
+    }
+    &__body {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        @media screen and (max-width:768px){
+            row-gap: 25px;
+        }
+    }
+    &__button{
+        margin-top: 90px;
+        padding: 0 10px;
+        max-width: 290px;
+        width: 100%;
+        @media screen and (max-width:768px){
+            margin-top: 40px;
+        }
+    }
+    &__button:nth-of-type(1) {
+        display: none;
+        @media screen and (min-width:769px){
+            display: inline-flex;
+        }
+    }
+    &__button:nth-of-type(2) {
+        display: none;
+        @media screen and (max-width:768px){
+            display: inline-flex;
+        }
+    }
+}
+.item-ask {
+    background: #F9FCFF;
+    border-radius: 15px;
+    padding: 36px 100px 30px 100px;
+    
+    @media screen and (max-width:768px){
+        padding: 20px 20px 20px 20px;
+        column-gap: 30px;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 60px;
+        @media screen and (max-width:768px){
+            column-gap: 10px;
+        }
+        img{
+            cursor: pointer;
+            @media screen and (max-width:768px){
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    &__content {
+        max-width: 780px;
+        text-align: left;
+    }
+
+    &__title {
+        font-family: var(--font-montserrat-italic-semibold);
+        font-size: 20px;
+        line-height: 140%;
+        color:var(--secondary-color);
+        @media screen and (max-width:480px){
+            font-size: 16px;
+        }
+    }
+
+    &__text {
+        margin-top: 15px;
+        max-width: 780px;
+        text-align: left;
+        margin-right: 100px;
+        display: none;
+        @media screen and (max-width:768px){
+            margin-right: 0;
+            
+        }
+    }
+    &__text.open{
+        display: block;
+        
+    }
+    &__icon{
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        background: url(../img/home-page/ask/plus.png) center no-repeat;
+        cursor: pointer;
+        transition: all 0.3s;
+        @media screen and (max-width:768px){
+            width: 30px;
+            height: 30px;
+            background-size:cover;
+            flex: 0 0 30px;
+            min-width: 30px;
+        }
+    }
+    &__icon.open{
+        background: url(../img/home-page/ask/minus.png) center no-repeat;
+    }
+   
+}
+//team=======================================================================
+.team {
+    background: #F9FCFF;
+    padding: 0 0 80px;
+    @media screen and (max-width:768px){
+        padding: 0 0 50px 0;
+    }
+    &__body {
+        text-align: center; 
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 80px;
+        margin-bottom: 60px;
+        @media screen and (max-width:768px){
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+
+    &__content {
+        padding: 80px 0 0 0;
+        text-align: left;
+        @media screen and (min-width:769px){
+            flex:0 1 782px; 
+        }
+        @media screen and (max-width:992px){
+            padding: 40px 0 0 0;
+        }
+        @media screen and (max-width:768px){
+            text-align:center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        @media screen and (min-width:769px){
+            max-width:665px;
+        }
+    }
+    &__img{
+        @media screen and (min-width:769px){
+            transform:translate(0,-65px);
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+       
+    }
+    &__button{
+        max-width: 390px;
+        width: 100%;
+      
+    }
+    
+}
+.container {
+}
+.title {
+}
+.text {
+}
+.button {
+}
