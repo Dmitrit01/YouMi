@@ -1,0 +1,97 @@
+:root {
+  --font-montserrat-norms-light:"Montserrat-Light",sans-serif;
+  --font-montserrat-italic-light:"Montserrat-LightItalic",sans-serif;
+  --font-montserrat-norms-regular:"Montserrat-Regular",sans-serif;
+  --font-montserrat-italic-regular:"Montserrat-Italic",sans-serif;
+  --font-montserrat-norms-medium:"Montserrat-Medium",sans-serif;
+  --font-montserrat-italic-medium:"Montserrat-MediumItalic",sans-serif;
+  --font-montserrat-norms-semibold:"Montserrat-SemiBold",sans-serif;
+  --font-montserrat-italic-semibold:"Montserrat-SemiBoldItalic",sans-serif;
+  --font-montserrat-norms-bold:"Montserrat-Bold",sans-serif;
+  --font-montserrat-italic-bold:"Montserrat-BoldItalic",sans-serif;
+  --font-montserrat-norms-extrabold:"Montserrat-ExtraBold",sans-serif;
+  --font-montserrat-italic-extrabold:"Montserrat-ExtraBoldItalic",sans-serif;
+  --main-color:#7872B9;
+  --secondary-color:#4D4D52;
+}
+
+.contacts {
+  padding: 100px 0 120px;
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    padding: 50px 0;
+  }
+}
+.contacts__box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 70px;
+  min-height: 120px;
+}
+@media screen and (max-width: 768px) {
+  .contacts__box {
+    margin-bottom: 40px;
+    min-height: 60px;
+  }
+}
+.contacts__box img {
+  align-self: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .contacts__box img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.contacts__title {
+  margin-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .contacts__title {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacts__title {
+    margin-left: 30px;
+  }
+}
+.grid-contacts {
+  display: grid;
+  grid-template: repeat(3, 1fr)/minmax(100px, 480px) minmax(100px, 480px);
+  gap: 50px 80px;
+}
+@media screen and (max-width: 768px) {
+  .grid-contacts {
+    grid-template: repeat(6, auto)/1fr;
+    gap: 30px 0;
+  }
+}
+.grid-contacts__title {
+  font-family: var(--font-montserrat-norms-semibold);
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #4D4D52;
+}
+@media screen and (max-width: 480px) {
+  .grid-contacts__title {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+}
+.grid-contacts__text {
+  font-family: var(--font-montserrat-norms-regular);
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #4D4D52;
+}
+@media screen and (max-width: 480px) {
+  .grid-contacts__text {
+    font-size: 14px;
+  }
+}
