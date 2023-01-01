@@ -753,4 +753,62 @@
 .team__button {
   max-width: 390px;
   width: 100%;
+  padding: 0 10px;
+}
+
+.remain {
+  padding: 120px 0;
+}
+@media screen and (max-width: 768px) {
+  .remain {
+    padding: 60px 0;
+  }
+}
+.remain__body {
+  text-align: center;
+}
+.remain__title {
+  margin-bottom: 15px;
+}
+.remain__text {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 480px) {
+  .remain__text {
+    margin-bottom: 30px;
+  }
+}
+.remain__button {
+  border: none;
+  outline: none;
+  min-height: 70px;
+  width: 100%;
+  max-width: 360px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 2px solid #7872B9;
+  border-radius: 15px;
+  padding: 0 10px;
+  font-family: var(--font-montserrat-norms-bold);
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #7872B9;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.remain__button:hover {
+  background: #F5F5F5;
+}
+.remain__button:active {
+  color: #fff;
+  background: #7872B9;
+}
+@media screen and (max-width: 480px) {
+  .remain__button {
+    font-size: 16px;
+    min-height: 50px;
+  }
 }
