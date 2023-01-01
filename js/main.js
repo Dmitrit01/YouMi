@@ -120,10 +120,6 @@ $(document).ready(function() {
           },
       ]
     });
-
-
-
-
     //Слайдер-year
     $('.slider-year').slick({
       dots:true,
