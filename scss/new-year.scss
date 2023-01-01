@@ -1,0 +1,170 @@
+//Переменные=============================================================
+:root{
+    --font-montserrat-norms-light:"Montserrat-Light",sans-serif;
+    --font-montserrat-italic-light:"Montserrat-LightItalic",sans-serif;
+    --font-montserrat-norms-regular:'Montserrat-Regular',sans-serif;
+    --font-montserrat-italic-regular:'Montserrat-Italic',sans-serif;
+    --font-montserrat-norms-medium:'Montserrat-Medium',sans-serif;
+    --font-montserrat-italic-medium:'Montserrat-MediumItalic',sans-serif;
+    --font-montserrat-norms-semibold:'Montserrat-SemiBold',sans-serif;
+    --font-montserrat-italic-semibold:'Montserrat-SemiBoldItalic',sans-serif;
+    --font-montserrat-norms-bold:'Montserrat-Bold',sans-serif;
+    --font-montserrat-italic-bold:'Montserrat-BoldItalic',sans-serif;
+    --font-montserrat-norms-extrabold:"Montserrat-ExtraBold",sans-serif;
+    --font-montserrat-italic-extrabold:"Montserrat-ExtraBoldItalic",sans-serif;
+    --main-color:#7872B9;
+    --secondary-color:#4D4D52;
+}
+//new-year===============================================================
+.new-year {
+    background: url(../img/new-year/top.com.png) 0 0/400px 80px repeat-x,url(../img/new-year/bottom.com.png) 0 100%/400px 80px repeat-x, #000000;
+    padding: 100px 0 100px 0;
+    position: relative;
+        &__body {
+            position: relative;
+		}
+        &__title {
+            text-align: center;
+            font-family: var(--font-montserrat-norms-regular);  
+            font-size: 60px;
+            text-shadow: 5px 5px 5px #f00, -3px -3px 5px #fff;
+            color:white;
+            position: relative; 
+            z-index: 5; 
+            @media screen and (max-width:992px){
+                font-size: 40px;
+            }
+            @media screen and (max-width:768px){
+                font-size: 24px;
+            }
+		}
+    &__toys-1{
+        position: absolute;
+        top: 0px;
+        left: 30px;
+        width: 200px;
+        height: 250px;
+        @media screen and (max-width:1400px){
+            opacity: 0.3;
+        }
+        @media screen and (max-width:480px){
+            display:none
+        }
+    }
+    &__toys-2{
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        width: 150px;
+        height: 265px;
+        @media screen and (max-width:1400px){
+            opacity: 0.3;
+        }
+        @media screen and (max-width:480px){
+            display:none
+        }
+    }
+}
+
+.new-year {
+
+    
+}
+.slider-big {
+    max-width: 600px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    position: relative;
+    @media screen and (max-width:992px){
+        max-width: 480px;
+    }
+    @media screen and (max-width:768px){
+        max-width: 360px;
+    }
+    @media screen and (max-width:640px){
+        display: none;
+    }
+   .slick-list{
+        overflow: hidden;
+    }
+    .slick-track{
+        display: flex;
+        
+    }
+    .slider-big__item{
+        padding: 0 0 3% 0;
+    }
+     //Стрелки
+     .slick-prev{
+        position: absolute;
+        top: calc(50% - 30px);
+        left: -120px;
+        z-index: 5;
+        width: 100px;
+        height: 60px;
+        background: url(../img/new-year/arrow-left.png) center/cover no-repeat;
+        cursor: pointer;
+        font-size: 0;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .slick-next{
+        position: absolute;
+        top: calc(50% - 30px);
+        right: -120px;
+        z-index: 5;
+        width: 100px;
+        height: 60px;
+        background: url(../img/new-year/arrow-right.png) center/cover no-repeat;
+        font-size: 0;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.slider-year{
+    margin-top: 20px;
+    position: relative;
+    .slick-list{
+        overflow: hidden;
+    }
+    .slick-track{
+        display: flex;
+        column-gap: 30px;
+    }
+    .slider-year__item{
+        padding: 0 0 2% 0;
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 15px;
+        margin-top: 20px;
+        row-gap: 15px;
+        li{
+            cursor: pointer;
+            height: 90px;
+            width: 55px;
+            background: url(../img/new-year/snow.png) center/cover no-repeat;
+            @media screen and (max-width:768px){
+                height: 70px;
+                width: 45px;
+            }
+            @media screen and (max-width:480px){
+                
+            }
+        }
+        .slick-active{
+            background: url(../img/new-year/fire.png) center/cover no-repeat;
+            
+        }
+        
+        button{
+            display: none;
+        }
+    }
+}
+

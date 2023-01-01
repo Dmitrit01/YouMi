@@ -120,7 +120,57 @@ $(document).ready(function() {
           },
       ]
     });
+
+
+
+
+    //Слайдер-year
+    $('.slider-year').slick({
+      dots:true,
+      arrows:false,
+      slidesToShow: 6,
+      asNavFor:'.slider-big',
+      responsive: [
+          {
+              breakpoint: 992,
+              settings: {
+                 slidesToShow: 5,
+                 
+              }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+               slidesToShow: 4,
+               
+            }
+        },
+        {
+          breakpoint: 640,
+          settings: {
+             slidesToShow: 2,
+             
+          }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+           slidesToShow: 1,
+           
+        }
+    },
+      ]
+    });
+    //Cлайдер-big-year
+    $('.slider-big').slick({
+      asNavFor:'.slider-year',
+      dots:false,
+      arrows:true,
+      slidesToShow: 1,
+    });
 });
+
+
 //Динамический адаптив
 class DynamicAdapt {
     constructor(type) {
