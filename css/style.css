@@ -81,11 +81,6 @@
   padding: 0 15px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 30px;
-  }
-}
 
 .ibg {
   position: relative;
@@ -144,6 +139,11 @@
   line-height: 130%;
   letter-spacing: 0.02em;
   color: #7872B9;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 480px) {
   .title {

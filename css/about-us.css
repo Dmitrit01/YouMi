@@ -817,6 +817,9 @@
     display: block;
   }
 }
+.slider-right .slick-list {
+  overflow: hidden;
+}
 .slider-right .slick-track {
   display: flex;
   gap: 0 130px;
